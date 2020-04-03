@@ -1,0 +1,21 @@
+/*
+
+zadanie pierwsze: stworzyć klasy + obiekty do nich
+stworzono klasy: audibooki, ebooki, filmy, książka, płyty muzyczne
+stworzono obiekty (po kolei): cisza, nowe_zycie, zelazne_serce, kamien_filozoficzny, ale_to_juz_bylo,
+dodano do nich dane (zbiorowe z klasy "pozycja" - ogolnej dla kazdej rzeczy w systemie + cechy indywidualne (osobno stworzone w każdej klasie))
+
+zadanie drugie: czas wypożyczenia + nakładanie kar
+stworzono metodę liczenia dni wypożyczenia, maksymalnie siedem dni jest na oddanie wypożyczonej pozycji
+jeżeli jest przekroczone 7 dni, to zaczyna naliczać karę 2zł za każdy dzień zwłoki (każdy dzień powyżej 7 dni)
+jeżeli jest równo 7 dni, to jest informacja, że trzeba oddać pozycje
+jeżeli jest mniej niż 7 dni, to jest informacja ile dni zostalo do oddania
+
+zadanie trzecie: tworzenie użytkownika + blokowanie wypożyczenia za nieterminowe oddanie zbiorów/historia wypożyczeń
+stworzono klasę: panel klienta, gdzie przechowywane są zmienne danych dla każdego klienta
+stworzono obiekt: pierwszy_klient, który symbolizuje jakiegoś użytkownika wypożyczalni
+nie ma historii wypozyczen ani blokady konta
+
+
+*/
+
