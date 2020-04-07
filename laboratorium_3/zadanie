@@ -3,7 +3,7 @@
 zadanie pierwsze:
 Stworzono dwie klasy: Kubełkowa, Bąbelkowa do różnych metod sortowania
 Stworzono klasę App: w niej jest zakodowany wybór opcji, pokazywanie ich i istnienie samej tablicy.
-Tablica ma 200 elemntów, przy użyciu funkcji Random są to liczby randomowe z zakresu od 1 do 20
+Tablica ma 200 elementów, przy użyciu funkcji Random są to liczby randomowe z zakresu od 1 do 20
 (teoretycznie od 0 do 20 (bez 20, funkcja kończy na 19), ale dodano 1, wtedy wygenerowane 0 + 1 = 1 i 19 + 1 = 20).
 Jeżeli użytkownik wybierze 1, pokaże się sortowanie kubełkowe.
 Jeżeli użytkownik wybierze 2, pokaże się sortowanie bąbelkowe.
