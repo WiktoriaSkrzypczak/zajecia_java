@@ -11,5 +11,5 @@ Jeżeli użytkownik wybierze inną liczbe, to pokaże się komunikat błędu i p
 Obie metody sortowania korzystają z interfejsu Sortable
 Metoda Bąbelkowa porównuje ze sobą elemnty tablicy i w przypadku, gdy jeden jest większy od drugiego, to zamienia je ze sobą miejscami.
 Metoda Kubełkowa tworzy "kubełki" w postaci list, w których umieszcza elementy tablicy, które sortuje osobno w każdym kubełku, a potem scala kubełki ze sobą.
-
+W obu metodach do liczenia kroków użyto po prostu stworzonej zmiennej step, która przy wykonywaniu operacji porównywania obiektów była powiększana o 1 za każdym razem, gdy to się działo, więc zliczała ilość wykonanych kroków. 
 */
