@@ -6,17 +6,17 @@ public class App
 {
     public static void main(String[] args)
     {
-        // Niech losuje sobie z dowolnego seeda liczby
+        //Losuje liczby z dowolnego seeda póki co
         Random r = new Random();
 
-        // Tworzenie tablicy n-elementowej
+        //Tworzy tablicę 200 elementów
         int[] tab = new int[200];
         for(int i = 0; i < tab.length; i++)
         {
          tab[i] = r.nextInt(20) + 1;
         }
 
-        //pokaże mi piekna tablice 200 elementow losowych z zakresu 20
+        //Sprawdzenie czy działa tablica, na wszelki wypadek
         //System.out.println(Arrays.toString(tab));
 
       System.out.println("Wybierz algorytm");
