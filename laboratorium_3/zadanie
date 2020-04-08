@@ -16,4 +16,7 @@ które sortuje osobno w każdym kubełku, a potem scala kubełki ze sobą.
 W obu metodach do liczenia kroków użyto po prostu stworzonej zmiennej step, 
 która przy wykonywaniu operacji porównywania obiektów była powiększana o 1 za każdym razem,
 gdy to się działo, więc zliczała ilość wykonanych kroków. 
+
+Dla opcji 1 (kubełkowe) będzie to 400.0 porównań
+Dla opcji 2 (bąbelkowe) będzie to 39800.0 porównań
 */
