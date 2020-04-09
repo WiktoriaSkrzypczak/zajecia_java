@@ -6,7 +6,7 @@ public class App
 {
     public static void main(String[] args)
     {
-        //Losuje liczby z dowolnego seeda póki co
+        
         Random r = new Random();
 
         //Tworzy tablicę 200 elementów
@@ -16,8 +16,8 @@ public class App
          tab[i] = r.nextInt(20) + 1;
         }
 
-        //Sprawdzenie czy działa tablica, na wszelki wypadek
-        //System.out.println(Arrays.toString(tab));
+        
+        System.out.println(Arrays.toString(tab));
 
       System.out.println("Wybierz algorytm");
         System.out.println("1 to Kubelkowa metoda");
