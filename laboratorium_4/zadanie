@@ -1,14 +1,24 @@
 /*
+zadanie 2
 
-3. Zadania do wykonania
-1) Zapoznaj się z dokumentacją na stronie Oracle dotyczącą podstawowych wyjątków
-i na jej podstawie wykorzystaj w kolejnych zadaniach.
-https://docs.oracle.com/javase/7/docs/api/java/lang/package-tree.html
-2) Korzystając z metody Integer.parseInt() napisz kod, który będzie zamieniał
-wprowadzone przez użytkownika znaki na liczbę typu int. Zapewnij odpowiednią
-obsługę wyjątków.
-3) Napisz program listujący na konsolę zawartość wskazanego przez użytkownika ntego elementu wcześniej utworzonej tablicy.
-4) Zmodyfikuj program 1-3 napisany podczas laboratorium nr 2, tak aby
-wykorzystywał on zarówno kompozycję jak i dziedziczenie
+zadanie 3
+
+zadanie 4
+Stworzono klasę nadrzedną: pozycja, w której utworzono główne zmienne 
+i funkcje nadawania/odczytywania przypisanych do zmienncyh danych, tzn. set i get. 
+Stworzono klasy i obiekty: audiobooki, ebooki, filmy, książka, płyty muzyczne.
+Te klasy korzystały z klasy pozycja, która została zadeklarowana w każdej z nich jako obiekt.
+Specjalne zmienne w każdej klasie (te idnywidualne jak np. rodzaj pliku pdf/mobi dla ebooka)
+zostały zadeklarowane przy użyciu this.zmienna = jakieś dane. 
+Zmienne z klasy nadrzędnej (pozycja) zostały zadeklarowane przy użyciu funkcji set, np. 
+pozycja_ebooki.setTytul("Czarna Madonna");
+Utworzoną klasę "Kara" pozostawiono bez zmian w postaci funkcji warunkującej ile trzeba zapłacić
+oraz wyświetlającą komunikaty na temat czy trzeba oddać/ile dni zostało do oddania wypożyczonej pozycji. 
+Klasę panel klienta delikatnie przerobiono, zostawiono jedynie deklarację glówną zmiennych, 
+tworzenie obiektu (pierwszy klient) dla tej klasy przeniesiono do klasy "System". 
+Klasę System również nieco przerobiono, zadeklarowano obiekty do konkretnych klas. 
+Następnie utworzono do każdej z nich zmienne, do których przypisano dane zmiennych z danego obiektu z każdej klasy. 
+Dodatkowo dla sprawdzenia, że całość działa system pozwala wyświetlić dane każdego obiektu i ich zmiennych. 
+Utworzono listę Biblioteka, do której dodano wszystkie obiekty, jest to przedstawienie całych z zasobów wypożyczalni.
 
 */
