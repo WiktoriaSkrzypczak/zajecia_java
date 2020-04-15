@@ -12,6 +12,16 @@ z informacją o złym formacie wprowadzonych danych
 
 
 zadanie 3
+Najpierw zaimplementowano funkcję Random, do losowania liczb do tablicy
+Stworzono tablicę, z dziesięcioma elementami, z liczbami losowanymi dzięki funkcji Random
+Z zakresu  od 1 do 10, następnie zostaje wyświetlona cała  tablica z informacją ile jest w niej elementów.
+Za pomocą funkcji Scanner użytkownik wprowadza, który element tablicy ma zostać wyświetlony
+Program wyświetla później który nr elementu, który użytkownik chciał wyświetlić 
+I dany element także. Jeżeli wpisany zostanie numer spoza tablicy, pojawi się błąd
+"java.lang.ArrayIndexOutOfBoundsException", dzięki funkcji "catch", gdy się on pojawi, 
+Zostanie wyświetlona informacja o potrzebie wprowadzenie poprawnie danych.
+
+
 
 zadanie 4
 Stworzono klasę nadrzedną: pozycja, w której utworzono główne zmienne 
