@@ -1,5 +1,15 @@
 /*
 zadanie 2
+Najpierw umożliwiono wprowadzenie ciągu znaków za pomocą formuły Scanner
+Ciąg znaków zostaje zapisany w postaci Stringa
+Następnie za pomocą metody Integer.parseInt następuje zmiana wprowadzonego ciągu znaków
+Ciąg znaków zostaje przypisany do nowej zmiennej w postaci inta. 
+Następnie system wyświetla wiadomość, że dany ciąg znaków został zmieniony ze Stringa na inta
+Int jest tylko do liczb, więc w Stringu musi też być wpisana liczba, żeby zadziałało
+W przypadku wpisania w Stringu znaku innego niż liczba, to pojawi się błąd
+przy użyciu formuły catch (NumberFormatException zly_format) 
+z informacją o złym formacie wprowadzonych danych
+
 
 zadanie 3
 
