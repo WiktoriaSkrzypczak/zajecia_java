@@ -36,7 +36,7 @@ public class Zadanie_3
             System.out.println(tab[tablica_element]);
         }
 
-        catch (NumberFormatException | java.lang.ArrayIndexOutOfBoundsException zly_format)
+        catch (java.lang.ArrayIndexOutOfBoundsException zly_format)
         {
             System.out.println("Wprowadziles zly format danych");
             System.out.println("Wprowadz poprawnie liczbe");
