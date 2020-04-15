@@ -38,7 +38,6 @@ public class Zadanie_3
 
         catch (java.lang.ArrayIndexOutOfBoundsException zly_format)
         {
-            System.out.println("Wprowadziles zly format danych");
             System.out.println("Wprowadz poprawnie liczbe");
         };
     }
