@@ -1,0 +1,44 @@
+/*
+
+Wprowadzono zmiany w kodzie, głównie zmiana nastąpiła w celu implementacji większej ilości metod. 
+Poprzednia wersja każdego z programów zakładała bardziej wykorzystanie ifów i else, w celu testowania, kod musiał
+zostać bardziej ujednolicony. Część kodu wymagająca obsługi ze strony użytkownika, np. wprowadzanie wartości zmiennych,
+zostawiono w głównej części programu tzn. w public static void main(String[] args), do pozostałych utworzono oddzielne funkcje. 
+Testy są bardzo proste, skupiają się na uzyskaniu konkretnego wyniku, gdy wiem, jaki powinien on być
+w celu sprawdzenia, czy program faktycznie zadziała dla tych wartości tak jak powinien
+
+zadanie 1 & test 1
+dwie formuły zwracania temperatur getTemp1 i getTemp2; 
+funkcja boolean checkTemp, która porównuje temperatury, czy spełniają warunek bycia powyżej > 100;
+testCorrectVariableAssign sprawdza czy  zostały przypisane wartości, właściwie jedynie, czy sytem "czyta" je
+testNormalTemperatures sprawdza gdy temperatury obie są powyżej 100, wynik powinien być false 
+testOneTempOutOfRange sprawdza gdy jedna z temperatury jest powyżej 100, wynik powinien być true
+void testTwoTempsOutOfRange sprawdza gdy obie temperatury są powyżej 100, wynik powinien być true
+do każdego z testu jednostkowego używam zaimplementowanej funkcji checkTemp. 
+
+
+zadanie 2 & test 2
+znowu używam funkcji boolean tym razem checkCombination, gdzie implementuję, że najpierw ma być 1, potem dla i+1 2, potem i+2 3
+dzięki temu system sprawdza czy kolejne elementy tablicy zgadzają się z założeniami, tzn. 1, 2 i 3 powinno być w tej kolejności
+void testCorrectVariableAssign znowu sprawdza, czy system czyta właściwie przypisane dane
+void testCorrectCombination sprawdza czy system działa w przypadku wpisania właściwej, dobrej kombinacji elementów tablicy
+void testWrongCombination sprawdza czy system działa w przypadku wpisania błędnej kombinacji elementów tablicy
+
+zadanie 3 & test 3
+tutaj zadanie był nieco bardziej skomplikowane, żeby zwrócić połowę ciągu znaków ze stringa używam funkcji substring
+znak stringa, od którego zacznie być wyświetlany nowy ciąg znaków obliczam w następujący sposób
+tworzę funkcję changeString, która zwracać mi będzie wartość zmiennej polowastringa. 
+Ustawiam jedną zmienną równą długości mojej tablicy, gdzie funkcja length umożliwia mi zapisanie nowej zmiennej jako int
+następnie deklaruję, że zmienna polowastringa = dlugoscstringa/2
+Tworzę drugą funkcję tym razem showString, w której wyświetlam połowę ciągu znaków za pomocą formuły 
+obiekt.substring(numer znaku od którego będzie wyświetlany string), w moim wypadku jest to zadanie_3.substring(polowastringa))
+testCorrectVariableAssign - ponownie sprawdza czy system właściwie widzi przypisane dane
+void testCorrectSizeChange - tym razem test sprawdza czy poprawnie został zmieniony rozmiar stringa, tzn
+czy zmienna polowastringa faktycznie jest polowa stringa
+testShowFalseString tutaj sprawdza czy formuła wykonuje sie poprawnie. ponieważ deklaruję expected 3 jako przewidywaną wielkość stringa,
+a potem porównuję ją z połową expected 3, to te stringi nigdy nie będą sobie równe
+
+
+
+zadanie 4 & test 4
+*/
