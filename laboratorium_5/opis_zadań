@@ -41,4 +41,13 @@ a potem porównuję ją z połową expected 3, to te stringi nigdy nie będą so
 
 
 zadanie 4 & test 4
+użyto dwóch funkcji, jedną checkNumbers, która oblicza o ile pól musi przesunąć się numer elementu tablicy, 
+tzn. najpierw program sprawdza, że jeżeli tablica ma daną długość, to wystarczy odjąć od niej 1 i podstawić w innej kolejności
+elementy tablicy, żeby zostały wypisane odwrotnie. Zamiast tworzyć nową tablicę, użyto istniejącej, odwracając kolejność elementów
+w niej zawartych. Druga funkcja reverseCombination dotyczy pętli, która do danej długości tablicy
+będzie wypisywać elementy w zmienionej kolejności. 
+void testCorrectVariableAssign sprawdza poprawne przypisanie wartości do funkcji
+void testCorrectCheckNumbers sprawdza czy poprawnie wykonuje się funkcja checkNumbers
+void testFalseCheckNumbers sprawdza czy poprawnie wykonuje się funkcja checkNumbers
+void testFalseCombination sprawdza czy poprawnie wykonuje się funkcja reverseCombination 
 */
