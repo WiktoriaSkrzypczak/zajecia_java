@@ -1,4 +1,12 @@
 /*
+zadanie 3 CO ZMIENIONO:
+Dodano wers przed wyświetleniem wybranej komórki   tablica_element = tablica_element - 1;
+Poprzednia wersja bez sprawdzenia pokazywała element o jeden w prawo niż ten podany przez użytkownika
+Działo się tak dlatego, że zapomniałam, że startowym elementem tablicy jest element oznaczony 0, a nie 1
+Dlatego, gdy użytkownik miał np. tablice {1, 2, 3} i wybierał element drugi, to pokazywała mu się liczba 3, 
+bo 1 -> 0, 2 -> 1, 3 -> 2. Ponieważ teraz program przed wyświetleniem przyjmuje, że dana komórka do wyświetlenia
+to wprowadzona liczba minus jeden, to teraz program powinien wyświetlać się już poprawnie. 
+
 zadanie 2
 Najpierw umożliwiono wprowadzenie ciągu znaków za pomocą formuły Scanner
 Ciąg znaków zostaje zapisany w postaci Stringa
