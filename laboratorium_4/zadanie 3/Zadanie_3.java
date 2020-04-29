@@ -32,6 +32,7 @@ public class Zadanie_3
             int tablica_element = Integer.parseInt(nr_elementu);
             System.out.println("Chcesz wyswietlic element nr ");
             System.out.println(nr_elementu);
+            tablica_element = tablica_element - 1;
             System.out.println("Ten element to ");
             System.out.println(tab[tablica_element]);
         }
