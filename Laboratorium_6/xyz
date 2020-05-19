@@ -1,1 +1,74 @@
-//xxx
+JSON to tekstowy format wymiany danych, który pozwala na ich zapis i odczyt. Opiera się na dwóch strukturach: 
+Jedną jest zbiór par nazwa/wartość, która pozwala na przypisanie do danej nazwy określonej wartości. 
+Drugą jest uporządkowana lista wartości. Te dwie rzeczy są uniwersalne i występują niezależnie od użytego środowiska programowania. 
+Każdy język programowania posługuje się nimi w takiej czy innej formie, dzięki czemu każdy z nich może wykorzystywac JSON. 
+
+*********
+ZADANIE 1 
+Zmieniono nazwę endpointa z greeting na bye
+"@RequestMapping("/bye") // odpowiada endpoint’om http" 
+
+*********
+ZADANIE 2 
+Dodano nowy endpoint
+"    @RequestMapping("/byenowy") // odpowiada endpoint’om http"
+Początkowo został stworzony poprzez skopiowanie poprzedniego endpointa i edycję nazwy, w późniejszych zadaniach wprowadziłam 
+do niego jednak pewne zmiany, potrzebne do wykonania zadania z określeniem płci według imienia. 
+
+*********
+ZADANIE 3
+Zmieniono zwracany parametr w JSONie, teraz zwracane jest kilka informacji, które były potrzebne do wykonania kolejnych zadań.
+"        return new Greeting(counter.incrementAndGet(), String.format(template, wiek, id, imie, plec));"
+
+*********
+ZADANIE 4 
+Dodano nowe parametry: wiek (dodano w poprzednim zadaniu, po prostu poprzez zmianę używanego wówczas elementu w kodzie bazowym),
+imię i ID dodano poprzez ponowne użycie @RequestParam i następnie zadeklarowanie ich. 
+"public Greeting greeting(@RequestParam(value = "wiek", defaultValue = "10") String
+                                     wiek,
+                                   @RequestParam(value = "id", defaultValue = "1234") String id,
+                                   @RequestParam(value = "imie", defaultValue = "Wiktoria") String imie, String plec)"
+
+*********
+ZADANIE 5 
+Stwierdzono, że przy rozpoznawaniu imienia najprościej posłużyć się założeniem, że imię kobiety zazwyczaj kończy się na a.
+W ten sposób dodano formułę, która sprawdzała zawartość zadeklarowanej wcześniej wartości stringa imienia, które pozwoliło
+na zadeklarowanie wartości zmiennej płeć. Zastososowano funkcję endsWith, która porównuje wprowadzony znak z ostatnim znakiem 
+wprowadzonego stringa. 
+
+" if(imie.endsWith("a"))
+        {
+            plec = "Kobieta";
+        }
+        else
+        {
+            plec = "Mezczyzna";
+        }"
+
+następnie dodano zwrócenie właściwej płci w końcowej formule
+"        return new Greeting(counter.incrementAndGet(), String.format(template, wiek, id, imie, plec));"
+
+*********
+ZADANIE 6 
+Do przeprowadzenia tego zadania wykorzystano drugiego użytego endpointa.
+Najpierw zadeklarowano dwa stringi związane ze sprawdzeniem imienia. Za pomocą prostej formuły if, sprawdzam czy parametr imie
+odpowiada wpisanej, zadeklarowanej wartości jaką jest "Wiktoria". Jeżeli spełnia założenie, to zmiena wzór zostaje przypisana 
+do nowej wartosci "zawiera sie we wzorze", jeżeli nie zawiera, to też jest informacja. Następnie zwracana jest informacja, czy
+imie się zawiera czy nie zawiera we wzorze. 
+
+"    private final AtomicLong counternowy = new AtomicLong();
+    @RequestMapping("/byenowy") // odpowiada endpoint’om http
+    public String greetingnowy(@RequestParam(value = "sprawdzam_wzor", defaultValue = "Wiktoria") String
+                                         imie, String wzor)
+    {
+        if(imie == "Wiktoria")
+        {
+            wzor = "zawiera sie we wzorze";
+        }
+        else
+        {
+            wzor = "nie zawiera sie we wzorze";
+        }
+        return "Podane imie " +wzor;
+    }
+    "
